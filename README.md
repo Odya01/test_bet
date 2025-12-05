@@ -2,8 +2,8 @@
 
 Исходный макет для выполнения задания: 
 <br>
-https://www.figma.com/file/F2qhd2q7PcL9zfIA7y500A/Testing?
- type=design&node-id=0-1&mode=design&t=ouEUZU3qDLkkc1Ya-0 
+https://www.figma.com/file/F2qhd2q7PcL9zfIA7y500A/Testing?type=design&node-id=0-1&mode=design&t=ouEUZU3qDLkkc1Ya-0 
+<br>
 Требования к заданию: 
 1. Вёрстка должна быть адаптивной с минимальным разрешением для отображения
  320px. Адаптив делается на Ваше усмотрение, однако при любом разрешении
