@@ -9,39 +9,98 @@
 
     <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="media.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container header__container">
-        <a href="index.html" class="header__logo">LOGO</a>
+        <a href="index.html" class="header__logo">
+          LoremIpsum.<span class="header__logo-accent">Net</span>
+        </a>
 
-        <!-- nav + burger -->
-        <nav class="nav__item">
-          <a href="index.html#" class="nav__list">Home</a>
+        <nav class="header__nav">
+          <ul class="header__list list-reset">
+            <li class="header__item">
+              <a href="#" class="header__link header__link-active">Бизнес</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">О нас</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Цены</a>
+            </li>
+            <li class="header__item">
+              <a href="#order" class="header__link">Оформить заказ</a>
+            </li>
+          </ul>
         </nav>
 
-        <input type="checkbox" id="burger-checkbox" class="burger-checkbox" />
-        <label for="burger-checkbox" class="burger"></label>
+        <input type="checkbox" id="header-burger" class="header__checkbox" />
+        <label for="header-burger" class="header__burger"></label>
 
-        <nav class="nav__burger">
-          <a href="index.html#" class="nav__list">Home</a>
+        <nav class="header__menu">
+          <ul class="header__list header__list--mobile">
+            <li class="header__item">
+              <a href="#" class="header__link">Бизнес</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">О нас</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Цены</a>
+            </li>
+            <li class="header__item">
+              <a href="#order" class="header__link">Оформить заказ</a>
+            </li>
+          </ul>
         </nav>
-        <!-- -->
       </div>
     </header>
 
     <main>
-      <section>
-        <div class="container">
-          <h2 class="heading"></h2>
-          <p class="text"></p>
-        </div>
-      </section>
+      <section class="hero">
+        <div class="container hero__container">
+          <div class="hero__content">
+            <h1 class="hero__title">
+              <span class="hero__title-accent">LOREM IPSUM</span> DOLOR SIT
+              AMETCONSECTETUR
+              <span class="hero__title-accent">ADIPISCING</span>
+            </h1>
 
-      <section>
-        <div class="container"></div>
+            <div class="hero__text">
+              <p class="hero__lead">
+                At vero eos et accusamus et iusto odio dignissimos ducimus!
+              </p>
+
+              <ul class="hero__list">
+                <li class="hero__item">Totam rem aperiam eaque ipsa</li>
+                <li class="hero__item">
+                  Sit voluptatem accusantium doloremque laudantium
+                </li>
+                <li class="hero__item">
+                  Sed ut perspiciatis, unde omnis iste natus error
+                </li>
+              </ul>
+            </div>
+
+            <div class="hero__actions">
+              <a href="#order" class="hero__btn hero__btn-primary">Заказать</a>
+              <a href="#" class="hero__btn hero__btn-secondary">Подробнее</a>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
