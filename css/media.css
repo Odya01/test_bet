@@ -94,6 +94,10 @@
   .footer__item::before {
     display: none;
   }
+
+  .header__menu {
+    width: 100%;
+  }
 }
 
 @media (max-width: 470px) {
@@ -134,10 +138,14 @@
   .hero {
     padding: 130px 0 40px 0;
   }
+
+
 }
 
 @media (max-width: 370px) {
   .hero__title {
     font-size: 25px;
   }
+
+
 }

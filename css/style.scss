@@ -107,7 +107,9 @@ $order-track: #e1e1e1;
       margin: 0;
     }
   }
-
+  &__item {
+    text-align: end;
+  }
   &__link {
     font-weight: 600;
     font-size: 13px;
