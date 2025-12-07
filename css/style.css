@@ -24,13 +24,17 @@ a {
 }
 
 .container {
-  max-width: 1132px;
+  max-width: 1212px;
   padding: 0 20px;
   margin: 0 auto;
 }
 
 section {
   padding: 60px 0;
+}
+
+main {
+  background-color: #272733;
 }
 
 .header {
@@ -83,6 +87,9 @@ section {
 .header__list--mobile {
   flex-direction: column;
   gap: 20px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 .header__link {
   font-weight: 600;
@@ -143,14 +150,16 @@ section {
   transition: bottom 0.3s 0.15s, transform 0.3s;
 }
 .header__menu {
+  list-style-type: none;
   display: none;
   position: absolute;
   top: 70px;
-  right: 20px;
+  right: 0px;
   padding: 24px 28px;
   background-color: #10101d;
   border-radius: 6px;
   z-index: 105;
+  min-width: 300px;
 }
 @media (min-width: 769px) {
   .header__menu {
@@ -173,6 +182,9 @@ section {
 }
 
 .hero {
+  margin: 0 auto;
+  max-width: 2200px;
+  background-color: #3d4050;
   position: relative;
   padding: 120px 0 140px;
   color: #000000;
@@ -315,7 +327,7 @@ section {
 .order__steps {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   margin-bottom: 60px;
 }
@@ -359,7 +371,7 @@ section {
   color: #ffffff;
 }
 .order__dots {
-  top: -21px;
+  top: 38px;
   position: relative;
   width: 110px;
   height: 24px;
@@ -384,8 +396,8 @@ section {
 .order__select {
   display: block;
   position: relative;
-  flex: 1;
-  min-width: 370px;
+  width: 100%;
+  max-width: 370px;
 }
 .order__select-input {
   display: none;
@@ -472,7 +484,8 @@ section {
   transform: translateY(-50%) rotate(-135deg);
 }
 .order__input {
-  flex: 1;
+  width: 100%;
+  max-width: 370px;
   background: #e5e5e5;
   border: none;
   padding: 12px 35px 12px 10px;
@@ -482,18 +495,23 @@ section {
   line-height: 100%;
   letter-spacing: 0;
   vertical-align: middle;
+  border: 2px solid transparent;
   color: #000000;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   outline: none;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 .order__input::-moz-placeholder {
   color: #000000;
 }
 .order__input::placeholder {
   color: #000000;
+}
+.order__input:hover {
+  border: 2px solid #3e9cdc;
 }
 .order__input-long {
   flex: 2;
@@ -650,7 +668,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px 0;
+  padding: 30px 20px;
   gap: 38px;
 }
 .footer__copy {
@@ -673,7 +691,7 @@ section {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding-left: 24px;
+  padding-left: 22px;
   position: relative;
 }
 .footer__item::before {
