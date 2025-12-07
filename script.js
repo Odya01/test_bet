@@ -23,9 +23,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // burger
 document.addEventListener("DOMContentLoaded", () => {
-  const burgerBtn = document.querySelector(".burger");
-  const burgerMenu = document.querySelector(".nav__burger");
-  const navLink = document.querySelectorAll(".nav__list");
+  const burgerBtn = document.querySelector(".header__burger");
+  const burgerMenu = document.querySelector(".header__menu");
+  const navLink = document.querySelectorAll(".header__link");
 
   burgerBtn.addEventListener("click", () => {
     burgerMenu.classList.toggle("active");
