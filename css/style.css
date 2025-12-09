@@ -424,7 +424,7 @@ main {
   transition: 0.3s ease;
 }
 .order__select--open .order__select-trigger {
-  background-color: #10101d;
+  background-color: #272733;
   color: #ffffff;
 }
 .order__select--open .order__select-trigger::after {
@@ -447,7 +447,7 @@ main {
   left: 0;
   top: calc(100% - 0px);
   width: 100%;
-  background-color: #10101d;
+  background-color: #272733;
   border-radius: 0 0 3px 3px;
   border: 1px solid #3d4050;
   opacity: 0;

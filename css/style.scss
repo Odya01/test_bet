@@ -494,7 +494,7 @@ $order-track: #e1e1e1;
   }
 
   &__select--open &__select-trigger {
-    background-color: $header;
+    background-color: #272733;
     color: $white;
   }
 
@@ -520,7 +520,7 @@ $order-track: #e1e1e1;
     left: 0;
     top: calc(100% - 0px);
     width: 100%;
-    background-color: $header;
+    background-color: #272733;
     border-radius: 0 0 3px 3px;
     border: 1px solid $select;
     opacity: 0;
