@@ -476,15 +476,30 @@ $order-track: #e1e1e1;
   &__select-trigger {
     height: 100%;
     width: 100%;
-    background-color: $select;
-    color: $white;
+    background-color: #e5e5e5;
+    color: $black;
     border-radius: 3px 3px 0 0;
     border: 1px solid $select;
-    font-size: 14px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+
     text-align: left;
     padding: 12px 40px 12px 14px;
     cursor: pointer;
     position: relative;
+    transition: 0.3s ease;
+  }
+
+  &__select--open &__select-trigger {
+    background-color: $header;
+    color: $white;
+  }
+
+  &__select--open &__select-trigger::after {
+    border-color: $white;
   }
 
   &__select-trigger::after {
@@ -494,8 +509,8 @@ $order-track: #e1e1e1;
     top: 50%;
     width: 6px;
     height: 6px;
-    border-left: 2px solid $white;
-    border-top: 2px solid $white;
+    border-left: 2px solid $black;
+    border-top: 2px solid $black;
     transform: translateY(-50%) rotate(45deg);
     transition: 0.2s ease;
   }

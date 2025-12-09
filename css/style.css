@@ -408,15 +408,27 @@ main {
 .order__select-trigger {
   height: 100%;
   width: 100%;
-  background-color: #3d4050;
-  color: #ffffff;
+  background-color: #e5e5e5;
+  color: #000000;
   border-radius: 3px 3px 0 0;
   border: 1px solid #3d4050;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
   text-align: left;
   padding: 12px 40px 12px 14px;
   cursor: pointer;
   position: relative;
+  transition: 0.3s ease;
+}
+.order__select--open .order__select-trigger {
+  background-color: #10101d;
+  color: #ffffff;
+}
+.order__select--open .order__select-trigger::after {
+  border-color: #ffffff;
 }
 .order__select-trigger::after {
   content: "";
@@ -425,8 +437,8 @@ main {
   top: 50%;
   width: 6px;
   height: 6px;
-  border-left: 2px solid #ffffff;
-  border-top: 2px solid #ffffff;
+  border-left: 2px solid #000000;
+  border-top: 2px solid #000000;
   transform: translateY(-50%) rotate(45deg);
   transition: 0.2s ease;
 }
