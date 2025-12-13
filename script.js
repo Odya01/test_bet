@@ -1,26 +1,3 @@
-// scroll animation
-document.addEventListener("DOMContentLoaded", () => {
-  const sections = document.querySelectorAll("section");
-  const options = {
-    root: null,
-    rootMargin: "0px",
-    threshold: 0.1,
-  };
-  const callback = (entries, observer) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        observer.unobserve(entry.target);
-      }
-    });
-  };
-  const observer = new IntersectionObserver(callback, options);
-  sections.forEach((section) => {
-    section.classList.add("hidden");
-    observer.observe(section);
-  });
-});
-
 // burger
 document.addEventListener("DOMContentLoaded", () => {
   const burgerBtn = document.querySelector(".header__burger");
@@ -78,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const hidden = select.querySelector(".order__select-input");
 
   trigger.addEventListener("click", () => {
-    select.classList.toggle("order__select--open");
+    select.classList.toggle("order__select_open");
   });
 
   options.forEach((option) => {
@@ -86,17 +63,15 @@ document.addEventListener("DOMContentLoaded", () => {
       const value = option.getAttribute("data-value");
       hidden.value = value;
       trigger.textContent = value;
-      options.forEach((o) =>
-        o.classList.remove("order__select-option--active")
-      );
-      option.classList.add("order__select-option--active");
-      select.classList.remove("order__select--open");
+      options.forEach((o) => o.classList.remove("order__select-option_active"));
+      option.classList.add("order__select-option_active");
+      select.classList.remove("order__select_open");
     });
   });
 
   document.addEventListener("click", (event) => {
     if (!select.contains(event.target)) {
-      select.classList.remove("order__select--open");
+      select.classList.remove("order__select_open");
     }
   });
 });

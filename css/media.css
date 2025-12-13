@@ -38,6 +38,26 @@
   .hero__container {
     min-height: auto;
   }
+
+  .order__row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .order__input,
+  .order__select {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  .order__file-body,
+  .order__file {
+    max-width: 100%;
+  }
+
+  .order__subtitle {
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: 778px) {
@@ -62,11 +82,7 @@
     font-size: 15px;
   }
 
-  .order__input,
-  .order__select {
-    font-size: 16px;
-    max-width: 100%;
-  }
+
 
   .order__steps {
     display: grid;

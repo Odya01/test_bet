@@ -5,6 +5,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-family: "Lato";
 }
 
 body {
@@ -17,7 +18,7 @@ a {
   text-decoration: none;
 }
 
-.list-reset {
+.list_reset {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -53,10 +54,8 @@ main {
 }
 .header__logo {
   font-family: Raleway;
-  font-weight: 800;
-  font-size: 28px;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   vertical-align: middle;
   text-transform: uppercase;
   font-size: 22px;
@@ -65,14 +64,14 @@ main {
   color: #ffffff;
   transition: 0.3s ease;
 }
-.header__logo-accent {
+.header__logo_accent {
   color: #3e9cdc;
   transition: 0.3s ease;
 }
 .header__logo:hover {
   color: #3e9cdc;
 }
-.header__logo:hover .header__logo-accent {
+.header__logo:hover .header__logo_accent {
   color: #ffffff;
 }
 @media (max-width: 768px) {
@@ -84,7 +83,7 @@ main {
   display: flex;
   gap: 60px;
 }
-.header__list--mobile {
+.header__list_mobile {
   flex-direction: column;
   gap: 20px;
   list-style-type: none;
@@ -108,10 +107,10 @@ main {
 .header__link:hover {
   color: #3e9cdc;
 }
-.header__link-active {
+.header__link_active {
   color: #3e9cdc;
 }
-.header__link-active:hover {
+.header__link_active:hover {
   color: #ffffff;
 }
 .header__checkbox {
@@ -186,7 +185,6 @@ main {
 
 .hero {
   margin: 0 auto;
-  max-width: 2200px;
   background-color: #3d4050;
   position: relative;
   padding: 120px 0 140px;
@@ -223,7 +221,7 @@ main {
   color: #000000;
   margin: 0;
 }
-.hero__title-accent {
+.hero__title_accent {
   color: #3e9cdc;
 }
 .hero__lead {
@@ -314,7 +312,7 @@ main {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
-.order__title span {
+.order__title_blue {
   color: #3e9cdc;
 }
 .order__subtitle {
@@ -393,7 +391,9 @@ main {
 }
 .order__row {
   display: flex;
+  justify-content: space-between;
   gap: 30px;
+  width: 100%;
   margin-bottom: 30px;
 }
 .order__select {
@@ -406,16 +406,17 @@ main {
   display: none;
 }
 .order__select-trigger {
+  font-family: "Lato";
   height: 100%;
   width: 100%;
   background-color: #e5e5e5;
-  color: #000000;
+  color: rgb(39, 39, 51);
   border-radius: 3px 3px 0 0;
   border: 1px solid #3d4050;
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   vertical-align: middle;
   text-align: left;
   padding: 12px 40px 12px 14px;
@@ -423,18 +424,18 @@ main {
   position: relative;
   transition: 0.3s ease;
 }
-.order__select--open .order__select-trigger {
+.order__select_open .order__select-trigger {
   background-color: #272733;
   color: #ffffff;
 }
-.order__select--open .order__select-trigger::after {
+.order__select_open .order__select-trigger::after {
   border-color: #ffffff;
 }
 .order__select-trigger::after {
   content: "";
   position: absolute;
   right: 14px;
-  top: 50%;
+  top: 52%;
   width: 6px;
   height: 6px;
   border-left: 2px solid #000000;
@@ -474,7 +475,7 @@ main {
 .order__select-option:hover {
   background-color: #3d4050;
 }
-.order__select-option--active {
+.order__select-option_active {
   color: #3e9cdc;
 }
 .order__select-list::-webkit-scrollbar {
@@ -490,15 +491,16 @@ main {
 .order__select-list::-webkit-scrollbar-thumb:hover {
   background: rgb(96.5368421053, 173.7157894737, 226.2631578947);
 }
-.order__select--open .order__select-panel {
+.order__select_open .order__select-panel {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
-.order__select--open .order__select-trigger::after {
+.order__select_open .order__select-trigger::after {
   transform: translateY(-50%) rotate(-135deg);
 }
 .order__input {
+  font-family: "Lato";
   width: 100%;
   max-width: 370px;
   background: #e5e5e5;
@@ -511,7 +513,7 @@ main {
   letter-spacing: 0;
   vertical-align: middle;
   border: 2px solid transparent;
-  color: #000000;
+  color: rgb(39, 39, 51);
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -520,10 +522,10 @@ main {
   transition: 0.3s ease;
 }
 .order__input::-moz-placeholder {
-  color: #000000;
+  color: rgb(39, 39, 51);
 }
 .order__input::placeholder {
-  color: #000000;
+  color: rgb(39, 39, 51);
 }
 .order__input:hover {
   border: 2px solid #3e9cdc;
@@ -602,9 +604,10 @@ main {
   font-weight: 600;
 }
 .order__file {
+  max-width: 370px;
   position: relative;
   flex: 1;
-  display: inline-flex;
+  display: block;
   width: 100%;
   cursor: pointer;
 }
@@ -615,6 +618,7 @@ main {
   cursor: pointer;
 }
 .order__file-body {
+  max-width: 370px;
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -639,7 +643,14 @@ main {
   background-image: url("../img/doc.svg");
 }
 .order__file-text {
-  letter-spacing: 0.04em;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: rgb(39, 39, 51);
 }
 .order__file-body:hover {
   border-color: #3e9cdc;
@@ -650,6 +661,7 @@ main {
   box-shadow: 0 0 0 1px #3e9cdc;
 }
 .order__submit {
+  font-family: "Loto";
   display: block;
   width: 100%;
   max-width: 370px;
